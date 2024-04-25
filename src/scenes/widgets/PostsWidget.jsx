@@ -9,7 +9,7 @@ const PostsWidget = ({ userId , isProfile=false}) => {
   const token = useSelector((state) => state.token);
 
   const getPosts = async () => {
-    const response = await fetch(`https://studentshubserver-5dr0vg6s2-itsaniket1s-projects.vercel.app/posts`, {
+    const response = await fetch(`https://studentshubserver.vercel.app/posts`, {
       method: "GET",
       headers: { Authorization: `Bearer ${token}` },
     });
@@ -19,7 +19,7 @@ const PostsWidget = ({ userId , isProfile=false}) => {
 
   const getUserPosts = async () => {
     const response = await fetch(
-      `https://studentshubserver-5dr0vg6s2-itsaniket1s-projects.vercel.app/posts/${userId}`,
+      `https://studentshubserver.vercel.app/posts/${userId}`,
       {
         method: "GET",
         headers: { Authorization: `Bearer ${token}` },

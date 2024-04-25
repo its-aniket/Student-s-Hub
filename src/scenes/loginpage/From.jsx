@@ -65,7 +65,7 @@ const Form = () => {
     }
     formData.append("picturePath", values.picture.name);
 
-    const savedUserResponse = await fetch("https://studentshubserver-5dr0vg6s2-itsaniket1s-projects.vercel.app/auth/register",
+    const savedUserResponse = await fetch("https://studentshubserver.vercel.app/auth/register",
       {
         method: "POST",
         body: formData,
@@ -80,7 +80,7 @@ const Form = () => {
   };
 
   const login = async (values, onSubmitProps) => {
-    const loggedInResponse = await fetch("https://studentshubserver-5dr0vg6s2-itsaniket1s-projects.vercel.app/auth/login", {
+    const loggedInResponse = await fetch("https://studentshubserver.vercel.app/auth/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(values),
