@@ -12,7 +12,7 @@ import {
 } from "@mui/icons-material";
 import QuestionAnswerOutlinedIcon from "@material-ui/icons/QuestionAnswerOutlined";
 import SharedOutlinedbutton from "./SharedOutlinedbutton";
-import useImage from 'react-image'
+
 import {
   Box,
   Divider,
@@ -168,21 +168,7 @@ const PostWidgets = ({
       setIsSubmittingComment(false);
     }
   };
-  function AnsFileImage() {
-    const { src } = useImage({
-      srcList: `https://drive.google.com/thumbnail?id=${answer.answerPicturePath}&sz=w2000`,
-    });
-
-    return (
-      <img
-        width="100%"
-        height="auto"
-        alt="post"
-        style={{ borderRadius: "0.75rem", marginTop: "0.75rem" }}
-        src={src}
-      />
-    );
-  }
+  
   return (
     <WidgetWrapper m="1rem 0.5rem">
       <Friend
@@ -463,7 +449,7 @@ const PostWidgets = ({
             )}
             {answer.answerPicturePath && (
               <>
-                {/* <Typography>{answer.answerPicturePath}</Typography> */}
+              
                 <img
                 width="100%"
                 height="auto"
@@ -471,9 +457,9 @@ const PostWidgets = ({
                 style={{ borderRadius: "0.75rem", marginTop: "0.75rem" }}
                 loading="lazy" 
                 src={`https://drive.google.com/thumbnail?id=${answer.answerPicturePath}&sz=w2000`}
-                // src={ansFilepath}
+            
                 />
-               {/* <AnsFileImage /> */}
+              
                </>
             )}
           </WidgetWrapper>

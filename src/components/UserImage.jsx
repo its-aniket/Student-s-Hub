@@ -9,7 +9,6 @@ const UserImage = ({image ,size ="60px"}) => {
             height={size}
             alt="user"
             src={`https://drive.google.com/thumbnail?id=${image}&sz=w2000`} 
-            loading="lazy" 
         />
     </Box>
   )
