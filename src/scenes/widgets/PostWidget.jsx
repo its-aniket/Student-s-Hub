@@ -9,8 +9,8 @@ import {
   ImageOutlined,
   MoreHorizOutlined,
   CodeOutlined,
+  QuestionAnswerOutlined
 } from "@mui/icons-material";
-import QuestionAnswerOutlinedIcon from "@material-ui/icons/QuestionAnswerOutlined";
 import SharedOutlinedbutton from "./SharedOutlinedbutton";
 
 import {
@@ -225,7 +225,7 @@ const PostWidgets = ({
 
           <FlexBetween gap="0.3rem">
             <IconButton onClick={() => SetisAnswers(!isAnswers)}>
-              <QuestionAnswerOutlinedIcon />
+              <QuestionAnswerOutlined />
             </IconButton>
             <Typography>Ans</Typography>
           </FlexBetween>
