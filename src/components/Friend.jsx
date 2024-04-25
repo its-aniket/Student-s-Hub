@@ -39,7 +39,7 @@ const Friend = ({
 
   const patchFriend = async () => {
     const response = await fetch(
-      `http://localhost:3001/users/${_id}/${friendId}`,
+      `https://studentshubserver-jvy4ylvyv-itsaniket1s-projects.vercel.app/users/${_id}/${friendId}`,
       {
         method: "PATCH",
         headers: {

@@ -19,7 +19,7 @@ const AdvertWidget = () => {
         width="100%"
         height="auto"
         alt="advert"
-        src="http://localhost:3001/assets/classmate.jpg"
+        src="https://studentshubserver-jvy4ylvyv-itsaniket1s-projects.vercel.app/assets/classmate.jpg"
         style={{ borderRadius: "0.75rem", margin: "0.75rem 0" }}
       />
       <FlexBetween>
