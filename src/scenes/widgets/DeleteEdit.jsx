@@ -14,7 +14,7 @@ const DeleteEdit = ({ postId,picturePath,description,code }) => {
   const handleDelete = async () => {
     console.log(postId);
     try {
-      const response = await fetch(`https://studentshubserver-jvy4ylvyv-itsaniket1s-projects.vercel.app/posts/delete/${postId}`, {
+      const response = await fetch(`https://studentshubserver-eb5u4c2w3-itsaniket1s-projects.vercel.app/posts/delete/${postId}`, {
         method: "DELETE", // Changed to DELETE
         headers: {
           Authorization: `Bearer ${token}`,

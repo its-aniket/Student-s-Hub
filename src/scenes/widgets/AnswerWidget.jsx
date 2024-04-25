@@ -19,7 +19,7 @@ const AnswerWidget = ({ answers }) => {
     formData.append("name", loggedInUserName);
     try {
       const response = await fetch(
-        `https://studentshubserver-jvy4ylvyv-itsaniket1s-projects.vercel.app/posts/${postId}/answer`,
+        `https://studentshubserver-eb5u4c2w3-itsaniket1s-projects.vercel.app/posts/${postId}/answer`,
         {
           method: "POST",
           headers: { Authorization: `Bearer ${token}`},
@@ -90,7 +90,7 @@ const AnswerWidget = ({ answers }) => {
             height="auto"
             alt="post"
             style={{ borderRadius: "0.75rem", marginTop: "0.75rem" }}
-            src={`https://studentshubserver-jvy4ylvyv-itsaniket1s-projects.vercel.app/assets/${answer.answerPicturePath}`}
+            src={`https://studentshubserver-eb5u4c2w3-itsaniket1s-projects.vercel.app/assets/${answer.answerPicturePath}`}
           />
         )}
       </WidgetWrapper>

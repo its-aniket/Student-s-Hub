@@ -16,7 +16,7 @@ const ProfilePage = () => {
     (state) => state.user.picturePath
   );
   const getUser = async () => {
-    const response = await fetch(`https://studentshubserver-jvy4ylvyv-itsaniket1s-projects.vercel.app/users/${userId}`, {
+    const response = await fetch(`https://studentshubserver-eb5u4c2w3-itsaniket1s-projects.vercel.app/users/${userId}`, {
       method: "GET",
       headers: { Authorization: `Bearer ${token}` },
     });
