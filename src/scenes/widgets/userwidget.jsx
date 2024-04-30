@@ -24,7 +24,7 @@ import {
     const server_url=process.env.SERVER_URL
     console.log(server_url)
     const getUser = async () => {
-      const response = await fetch(`https://studentshubserver.vercel.app/users/${userId}`, {
+      const response = await fetch(`http://localhost:3001/users/${userId}`, {
         
         method: "GET",
         headers: { Authorization: `Bearer ${token}` },
