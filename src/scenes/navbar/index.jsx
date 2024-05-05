@@ -47,7 +47,7 @@ const Navbar = (userId) => {
   const handleSearch = async () => {
     setIsSearching(true);
     try {
-      const response = await fetch(`http://localhost:3001/posts/search/${search}`, {
+      const response = await fetch(`https://studentshubserver.vercel.app/posts/search/${search}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',  // Specify JSON content

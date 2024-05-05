@@ -96,7 +96,7 @@ const PostWidgets = ({
 
   // const filepath=  `https://drive.google.com/open?id=${picturePath}`
   const patchLike = async () => {
-    const response = await fetch(`http://localhost:3001/posts/${postId}/like`, {
+    const response = await fetch(`https://studentshubserver.vercel.app/posts/${postId}/like`, {
       method: "PATCH",
       headers: {
         Authorization: `Bearer ${token}`,
@@ -122,7 +122,7 @@ const PostWidgets = ({
 
     try {
       const response = await fetch(
-        `http://localhost:3001/posts/${postId}/answer`,
+        `https://studentshubserver.vercel.app/posts/${postId}/answer`,
         {
           method: "POST",
           headers: { Authorization: `Bearer ${token}` },
@@ -144,7 +144,7 @@ const PostWidgets = ({
     setIsSubmittingComment(true);
     try {
       const response = await fetch(
-        `http://localhost:3001/posts/${postId}/comment`,
+        `https://studentshubserver.vercel.app/posts/${postId}/comment`,
         {
           method: "POST",
           headers: {

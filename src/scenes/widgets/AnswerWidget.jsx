@@ -19,7 +19,7 @@ const AnswerWidget = ({ answers }) => {
     formData.append("name", loggedInUserName);
     try {
       const response = await fetch(
-        `http://localhost:3001/posts/${postId}/answer`,
+        `https://studentshubserver.vercel.app/posts/${postId}/answer`,
         {
           method: "POST",
           headers: { Authorization: `Bearer ${token}`},
@@ -90,7 +90,7 @@ const AnswerWidget = ({ answers }) => {
             height="auto"
             alt="post"
             style={{ borderRadius: "0.75rem", marginTop: "0.75rem" }}
-            src={`http://localhost:3001/assets/${answer.answerPicturePath}`}
+            src={`https://studentshubserver.vercel.app/assets/${answer.answerPicturePath}`}
           />
         )}
       </WidgetWrapper>

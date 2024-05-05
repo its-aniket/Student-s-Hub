@@ -44,7 +44,7 @@ const Editpage = () => {
   const medium = palette.neutral.medium;
   const getPost=async()=>{
     const response = await fetch(
-        `http://locahost:3001/edit/${postId}`,{
+        `https://studentshubserver.vercel.app/edit/${postId}`,{
         method: "GET",
         headers: {Authorization: `Bearer ${token}`}
     });
